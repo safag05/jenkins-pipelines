@@ -6,10 +6,10 @@ node {
 		// Below line triggers this job every minute
 		pipelineTriggers([pollSCM('* * * * *')]),
 		parameters([choice(choices: [
-			'dev1.acirrustech.com', 
-			'qa1.acirrustech.com', 
-			'stage1.acirrustech.com', 
-			'prod1.acirrustech.com'], 
+			'dev1.safa-g.com', 
+			'qa1.safa-g.com', 
+			'stage1.safa-g.com', 
+			'prod1.safa-g.com'], 
 			description: 'Please choose an environment', 
 			name: 'ENVIR')]), 
 		])
@@ -19,22 +19,22 @@ node {
         //Installs web server on different environment
 	stage("Install Prerequisites"){
 		sh """
-		ssh centos@jenkins_worker1.safa-g.com                 sudo yum install httpd -y
+		ssh centos@jenkins_worker1.${ENVIR}.com                 sudo yum install httpd -y
 		"""
 	}
         //Copies over developers files to different environment
 	stage("Copy artifacts"){
 		sh """
-		scp -r *  centos@jenkins_worker1.safa-g.com:/tmp
-		ssh centos@jenkins_worker1.safa-g.com                 sudo cp -r /tmp/index.html /var/www/html/
-		ssh centos@jenkins_worker1.safa-g.com                 sudo cp -r /tmp/style.css /var/www/html/
-		ssh centos@jenkins_worker1.safa-g.com				   sudo chown centos:centos /var/www/html/
-		ssh centos@jenkins_worker1.safa-g.com				   sudo chmod 777 /var/www/html/*
+		scp -r *  centos@jenkins_worker1.${ENVIR}.com:/tmp
+		ssh centos@jenkins_worker1.${ENVIR}.com                 sudo cp -r /tmp/index.html /var/www/html/
+		ssh centos@jenkins_worker1.${ENVIR}.com                 sudo cp -r /tmp/style.css /var/www/html/
+		ssh centos@jenkins_worker1.${ENVIR}.com				   sudo chown centos:centos /var/www/html/
+		ssh centos@jenkins_worker1.${ENVIR}.com				   sudo chmod 777 /var/www/html/*
 		"""
 	}
         //Restarts web server
 	stage("Restart web server"){
-		sh "ssh centos@jenkins_worker1.safa-g.com                 sudo systemctl restart httpd"
+		sh "ssh centos@jenkins_worker1.${ENVIR}.com                 sudo systemctl restart httpd"
 	}
         //Sends a message to slack
 	stage("Slack"){
