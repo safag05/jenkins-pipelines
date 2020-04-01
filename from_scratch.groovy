@@ -44,4 +44,3 @@ node {
 		slackSend color: '#BADA55', message: 'Hello, World!'
 	}
 }
-s
