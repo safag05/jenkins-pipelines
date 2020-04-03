@@ -15,7 +15,7 @@ node {
    echo "hello" 
   } 
 } 
-s
+
 s
 s
 s
