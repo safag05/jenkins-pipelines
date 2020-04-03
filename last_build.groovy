@@ -7,8 +7,8 @@ properties([
         upstream('Input'),
         // Execute every minute
         cron('* * * * *')])
-        ]),
     ])
+])
 
 stage("Stage1"){ 
 
