@@ -3,7 +3,9 @@ node {
 properties([
     buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '', numToKeepStr: '5')),    
     pipelineTriggers([
+        // Runs with "input" Job
         upstream('Input'),
+        // Execute every minute
         cron('* * * * *')])
         ]),
     ])
