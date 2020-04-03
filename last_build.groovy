@@ -6,7 +6,8 @@ properties([
         // Runs with "input" Job
         upstream('Input'),
         // Execute every minute
-        cron('* * * * *')])
+        cron('* * * * *')
+        ])
     ])
 
 stage("Stage1"){ 
