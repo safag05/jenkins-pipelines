@@ -15,5 +15,3 @@ node {
 		echo "hello"
 	}
 }
-
-s
