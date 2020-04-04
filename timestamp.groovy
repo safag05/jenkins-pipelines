@@ -13,7 +13,7 @@ node {
 }
 	stage("Timestamp"){
 		timestamps {
-			echo "hello"
+		echo "hello"
 		}
 	}
 }
