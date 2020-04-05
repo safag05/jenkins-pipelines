@@ -12,10 +12,10 @@ node {
 		name: 'Version'), 
 			choice(choices: 
 			[
-			'dev.acirrustech.com', 
-			'qa.acirrustech.com', 
-			'stage.acirrustech.com', 
-			'prod.acirrustech.com'], 
+			'dev.safa-g.com', 
+			'qa.safa-g.com', 
+			'stage.safa-g.com', 
+			'prod.safa-g.com'], 
 	description: 'Please provide an environment to build the application', 
 		name: 'Environment')])])
 	stage("Stage2"){
