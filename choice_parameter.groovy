@@ -27,4 +27,3 @@ properties(
 }
 s
 s
-s
