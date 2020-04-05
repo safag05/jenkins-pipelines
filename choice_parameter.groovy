@@ -26,4 +26,3 @@ properties(
 	}
 }
 s
-s
