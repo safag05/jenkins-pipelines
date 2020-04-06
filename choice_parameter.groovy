@@ -25,5 +25,3 @@ properties(
 		} 
 	}
 }
-1
-
