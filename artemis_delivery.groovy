@@ -1,7 +1,3 @@
-
-
-
-
 node {
 	properties(
 		[parameters(
