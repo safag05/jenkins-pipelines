@@ -1,6 +1,5 @@
 node {
 	properties(
-		[[$class: 'JiraProjectProperty'], 
 		buildDiscarder(logRotator(artifactDaysToKeepStr: '', 
 		artifactNumToKeepStr: '', 
 		daysToKeepStr: '', 
