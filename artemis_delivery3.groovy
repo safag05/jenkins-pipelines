@@ -71,7 +71,7 @@ node {
 			timestamps {
 				ws {
 					sh '''
-						ssh centos@${ENVIR} $(aws ecr get-login --no-include-email --region eu-west-2)
+						ssh centos@dev1.safa-g.com $(aws ecr get-login --no-include-email --region eu-west-2)
 						'''
 				}
 			}
@@ -82,10 +82,10 @@ node {
 					try {
 						sh '''
 							#!/bin/bash
-							IMAGES=$(ssh centos@${ENVIR} docker ps -aq) 
+							IMAGES=$(ssh centos@dev1.safa-g.com docker ps -aq) 
 							for i in \$IMAGES; do
-								ssh centos@${ENVIR} docker stop \$i
-								ssh centos@${ENVIR} docker rm \$i
+								ssh centos@dev1.safa-g.com docker stop \$i
+								ssh centos@dev1.safa-g.com docker rm \$i
 							done 
 							'''
 					} catch(e) {
@@ -99,7 +99,7 @@ node {
 		timestamps {
 			ws {
 				sh '''
-					ssh centos@${ENVIR} docker run -dti -p 5001:5000 620911902775.dkr.ecr.eu-west-2.amazonaws.com/artemis:${Version}
+					ssh centos@dev1.safa-g.com docker run -dti -p 5001:5000 620911902775.dkr.ecr.eu-west-2.amazonaws.com/artemis:${Version}
 					'''
             }
         }
