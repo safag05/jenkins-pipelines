@@ -67,15 +67,7 @@ node {
 				}
 			}
 		}
-		stage("Authenticate"){
-			timestamps {
-				ws {
-					sh '''
-						ssh centos@dev1.safa-g.com $(aws ecr get-login-password --region eu-west-2 | docker login --username AWS --password-stdin 620911902775.dkr.ecr.eu-west-2.amazonaws.com/artemis)
-						'''
-				}
-			}
-		}
+		
 		stage("Clean Up"){
 			timestamps {
 				ws {
