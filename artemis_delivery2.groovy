@@ -1,5 +1,11 @@
 node {
 	properties(
+		[[$class: 'JiraProjectProperty'], 
+		buildDiscarder(logRotator(artifactDaysToKeepStr: '', 
+		artifactNumToKeepStr: '', 
+		daysToKeepStr: '', 
+		numToKeepStr: '5')), 
+		disableConcurrentBuilds()],
 		[parameters(
 			[choice(choices: 
 				[
