@@ -71,7 +71,7 @@ node {
 			timestamps {
 				ws {
 					sh '''
-						ssh centos@dev1.safa-g.com $(aws ecr get-login --no-include-email --region eu-west-2)
+						ssh centos@dev1.safa-g.com $(aws ecr get-login-password --region eu-west-2 | docker login --username AWS --password-stdin 620911902775.dkr.ecr.eu-west-2.amazonaws.com/artemis)
 						'''
 				}
 			}
