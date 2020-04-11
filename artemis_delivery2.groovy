@@ -1,6 +1,6 @@
 node {
 	properties(
-		buildDiscarder(logRotator(artifactDaysToKeepStr: '', 
+		[buildDiscarder(logRotator(artifactDaysToKeepStr: '', 
 		artifactNumToKeepStr: '', 
 		daysToKeepStr: '', 
 		numToKeepStr: '5')), 
