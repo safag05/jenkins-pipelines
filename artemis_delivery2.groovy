@@ -4,8 +4,8 @@ node {
 		artifactNumToKeepStr: '', 
 		daysToKeepStr: '', 
 		numToKeepStr: '5')), 
-		disableConcurrentBuilds()],
-		[parameters(
+		disableConcurrentBuilds(),
+		parameters(
 			[choice(choices: 
 				[
 				'0.1', 
