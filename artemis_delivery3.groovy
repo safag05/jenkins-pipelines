@@ -14,7 +14,7 @@ node {
 				'0.9',
 				'10',
 			], 
-            
+
 		description: 'Which version of the app should I deploy? ', 
 		name: 'Version')])])
 		stage("Stage1"){
@@ -99,7 +99,7 @@ node {
 		timestamps {
 			ws {
 				sh '''
-					ssh centos@${ENVIR} docker run -dti -p 5001:5000 620911902775.dkr.ecr.us-east-1.amazonaws.com/artemis:${Version}
+					ssh centos@${ENVIR} docker run -dti -p 5001:5000 620911902775.dkr.ecr.eu-west-2.amazonaws.com/artemis:${Version}
 					'''
             }
         }
