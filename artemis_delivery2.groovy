@@ -93,7 +93,7 @@ properties(
 		timestamps {
 			ws {
 				sh '''
-					ssh centos@${ENVIR} docker run -dti -p 5001:5000 620911902775.dkr.ecr.us-east-1.amazonaws.com/artemis:${Version}
+					ssh centos@${ENVIR} docker run -dti -p 5001:5000 620911902775.dkr.ecr.eu-west-2.amazonaws.com/artemis:${Version}
 					'''
             }
         }
