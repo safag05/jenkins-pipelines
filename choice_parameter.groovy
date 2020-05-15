@@ -27,6 +27,5 @@ properties(
 }
 
 
-6
 1
 
