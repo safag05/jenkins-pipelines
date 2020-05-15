@@ -28,5 +28,5 @@ properties(
 
 
 6
-10
+1
 
