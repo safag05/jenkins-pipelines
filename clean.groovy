@@ -15,5 +15,3 @@ node {
 		cleanWs()
 	}
 }
-1
-2
