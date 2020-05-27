@@ -15,9 +15,3 @@ node {
                 mail bcc: '', body: 'Running', cc: 'support@company.com', from: '', replyTo: '', subject: 'Test', to: 'farrukhsadykov@gmail.com'
         }
 }
-12345
-1234567
-12345
-123456
-1234
-5
