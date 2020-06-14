@@ -15,7 +15,7 @@ node {
 		echo "hello"	
 	}
 	stage("stage5"){
-		input 'Continue?'
+		input 'Continue or stop?'
 	}
 }
 
