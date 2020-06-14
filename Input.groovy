@@ -12,7 +12,7 @@ node {
 		input 'Should I proceed?'
 	}
 	stage("Stage4"){
-		echo "hello"	
+		echo "hello world"	
 	}
 	stage("stage5"){
 		input 'Continue?'
