@@ -17,8 +17,5 @@ node {
 	stage("stage5"){
 		input 'Continue?'
 	}
-	stage("stage6"){
-		echo 'Nice Work!'
-	}
 }
 
