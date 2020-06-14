@@ -17,7 +17,7 @@ node {
 	stage("stage5"){
 		input 'Continue?'
 	}
-	stage(stage6){
+	stage("stage6"){
 	
 	}
 }
