@@ -21,5 +21,4 @@ node {
 		echo 'Nice Work!'
 	}
 }
-}
 
