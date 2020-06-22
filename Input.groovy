@@ -22,5 +22,8 @@ node {
 	stage("stage6"){
 		echo 'Nice Work!'
 	}
+	stage("stage6"){
+		echo 'Nice Work!'
+	}
 }
 
