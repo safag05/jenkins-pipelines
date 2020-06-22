@@ -22,7 +22,7 @@ node {
 	stage("stage6"){
 		echo 'Nice Work!'
 	}
-	stage("stage6"){
+	stage("stage7"){
 		echo 'Nice Work!'
 	}
 }
