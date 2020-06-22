@@ -23,6 +23,7 @@ node {
 		echo 'Nice Work!'
 	}
 	stage("stage7"){
+		input
 		echo 'great job!!'
 	}
 }
