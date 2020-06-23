@@ -27,6 +27,5 @@ node {
 		echo 'great job!!'
 	}
 	stage("stage7"){
-		
 }
 
