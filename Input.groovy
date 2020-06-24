@@ -26,7 +26,7 @@ node {
 		input 'see the final result??'
 		echo 'great job!!'
 	}
-	stage("stage7"){
+	stage("stage8"){
 		input 'see the final result??'
 		echo 'great job!!'
 	}
