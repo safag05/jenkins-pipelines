@@ -12,6 +12,7 @@ node {
 		echo "hello"
 	}
 	}
+	timestamps{
 	stage("Ask for Input"){
 		input 'Should I proceed?'
 	}
