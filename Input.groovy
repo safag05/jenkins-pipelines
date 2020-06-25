@@ -4,6 +4,7 @@ node {
 		echo "hello"
 	}
 	}
+	}
 	stage("Stage2"){
 		echo "hello"
 	}
@@ -29,5 +30,5 @@ node {
 	stage("stage8"){
 		input 'continue?'
 	}
-}
+
 
