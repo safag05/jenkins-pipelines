@@ -17,7 +17,7 @@ node {
 		input 'Should I proceed?'
 	}
 	}
-	timestamp{
+	timestamps{
 	stage("Stage4"){
 		echo "hello world"	
 	}
