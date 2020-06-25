@@ -17,7 +17,6 @@ node {
 		input 'Should I proceed?'
 	}
 	}
-}
 	stage("Stage4"){
 		echo "hello world"	
 	}
