@@ -22,6 +22,7 @@ node {
 		echo "hello world"	
 	}
 	}
+	timestamps
 	stage("stage5"){
 		input 'Continue?'
 	}
