@@ -27,7 +27,7 @@ node {
 		input 'Continue?'
 	}
         }
-	timestamps
+	timestamps{
 	stage("stage6"){
 		echo 'Nice Work!'
 	}
