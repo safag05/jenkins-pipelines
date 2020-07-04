@@ -38,10 +38,5 @@ node {
 		echo 'great job!!'
 	}
 	}
-	timestamps{
-	stage("stage8"){
-		input 'continue?'
-	}
-	}
 }
 
