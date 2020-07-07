@@ -18,6 +18,7 @@ node {
 			'prod.safa-g.com'], 
 	description: 'Please provide an environment to build the application', 
 		name: 'Environment')])])
+	timestamps {
 	stage("Stage2"){
 		timestamps {
 			git 'https://github.com/farrukh90/packer.git'
@@ -54,4 +55,5 @@ node {
 			}
 		}
 	}
+	}		
 }
