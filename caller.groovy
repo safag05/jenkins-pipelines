@@ -1,4 +1,5 @@
 node {
+	timestamp
 	stage("Stage1"){
 		echo "hello"
 }
