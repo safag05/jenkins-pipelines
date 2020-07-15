@@ -1,5 +1,5 @@
 node {
-	timestamp
+	timestamp {
 	stage("Stage1"){
 		echo "hello"
 }
