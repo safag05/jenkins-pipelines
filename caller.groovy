@@ -20,5 +20,5 @@ node {
 	stage("Stage5"){
 		echo "hello"
 	}
-    
+	}
 }
