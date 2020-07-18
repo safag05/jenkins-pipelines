@@ -1,5 +1,5 @@
 node {
-	timestamp {
+	timestamps {
 	stage("Stage1"){
 		git 'https://github.com/farrukh90/packer.git'
 }
