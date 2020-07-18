@@ -15,4 +15,5 @@ node {
 	stage("Stage5"){
 		cleanWs()
 	}
+	}
 }
