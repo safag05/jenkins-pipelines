@@ -15,4 +15,5 @@ node {
 	stage("Send Notifications to Slack"){
 		slackSend color: '#BADA55', message: 'Hello, World!'
 	}
+	}
 }
