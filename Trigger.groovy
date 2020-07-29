@@ -15,4 +15,7 @@ node {
 	stage("Stage5"){
 		echo "hello"
 	}
+	stage("Stage6"){
+		echo "apps"
+	}
 }
